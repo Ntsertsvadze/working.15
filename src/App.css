@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 40px;
+}
+
+.toggle-button {
+  padding: 20px;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button.light {
+  background-color: gold;
+  color: rgb(20, 22, 22);
+}
+
+.toggle-button.dark {
+  background-color: green;
+  color: rgb(20, 22, 22);
+}
+
